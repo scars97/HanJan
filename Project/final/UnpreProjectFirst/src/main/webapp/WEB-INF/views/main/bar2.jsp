@@ -25,44 +25,8 @@
 </head>
 <body>
 	<!-- Navigator -->
-	<header style="margin-top: 70px;">
-		<nav class="navbar navbar-expand-lg bg-white fixed-top"
-			style="height: 59px;">
-			<div class="container ">
-				<a class="navbar-brand" href="main"><img
-					src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/324743408_1194186174806270_7811699012082904800_n.jpg?stp=dst-jpg_s600x600&_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=A50zUfLChPsAX9RuQZK&_nc_ht=scontent-ssn1-1.xx&oh=00_AfBLd80qeHx9BxDWzyxTURP1ysgn_lh9IqSDK9A2QoUQfw&oe=63C300E6"
-					style="width: 10%; height: 10%" alt="logo"></a>
-				<button class="navbar-toggler" type="button"
-					data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end"
-					id="navbarSupportedContent">
-					<ul class="navbar-nav" style="height: 60px;">
-						<li class="nav-item"
-							style="border-right: 2px solid; border-left: 2px solid; width: 85px; text-align: center; margin-top: 15px;">
-							<a class="nav-link active" href="#">커뮤니티</a>
-						</li>
-						<li class="nav-item"
-							style="border-right: 2px solid; width: 85px; text-align: center; margin-top: 15px;">
-							<a class="nav-link active" href="#">대자보</a>
-						</li>
-
-						<li class="nav-item"
-							style="border-right: 2px solid; width: 85px; text-align: center; margin-top: 15px;">
-							<a class="nav-link active" href="bar">Bar</a>
-						</li>
-						<li class="nav-item"
-							style="width: 85px; text-align: center; margin-top: 15px;">
-							<a class="nav-link active" href="#">로그인</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+	<!-- upper navbar here -->
+	<jsp:include page="./common/navbar.jsp"/>
 
 
 
@@ -86,20 +50,210 @@
         <!-- 해당 레스토랑 목록 -->                          
           <ul class="list-restaurants type-single-big top_list_restaurant_list">
               
-            
+              <!-- 1 -->  
               <li class="toplist_list">
                 <div class="with-review">
                   <figure class="restaurant-item">
                     <a href="main">
                       <div class="thumb">
-                        <img class="center-croping lazy" alt="..." src="https://lh3.googleusercontent.com/p/AF1QipN0Qc6dZ_aLHct_dcuuJxnBwoCqymXvX1b-pWvG=s680-w680-h510" data-original="https://mp-seoul-image-production-s3.mangoplate.com/280896/1100616_1664639802208_45044?fit=around|738:738&amp;crop=738:738;*,*&amp;output-format=jpg&amp;output-quality=80" data-error="https://mp-seoul-image-production-s3.mangoplate.com/web/resources/kssf5eveeva_xlmy.jpg?fit=around|*:*&amp;crop=*:*;*,*&amp;output-format=jpg&amp;output-quality=80" style="display: block;">
+                        <img class="center-croping lazy" alt="..." src="resources/image/MonkToBach.png" style="display: block;">
                       </div>
                     </a>
                     <figcaption>
                       <div class="info">                        
                         <span class="title ">
                           <a href="/restaurants/vcheyGIxPJ9D">
-                            1.<h3> JZ카페</h3>
+                            <h3>1. 몽크 투 바흐 Monk To Bach</h3>
+                          </a>
+                        </span>
+                        
+                        <p/>
+                        <table>
+                        <tr class="etc">
+                        	<th style="width: 110px; padding-bottom: 5px; padding-right:10px;">주소</th>
+                        	<td style="padding-bottom: 5px;">서울특별시 강남구 도산대로27길 21</td>
+                        </tr>
+                        <tr class="etc">
+                        	<th style="width: 110px; padding-bottom: 5px; padding-right:10px;">연락처</th>
+                        	<td style="padding-bottom: 5px;">070-8637-5636</td>
+                        </tr>
+                        <tr class="etc">
+                        	<th style="vertical-align:top; width: 110px; padding-bottom: 5px; padding-right:10px;">영업 시간</th>
+                        	<td style="padding-bottom: 5px;">월-일: 19:00 - 01:00</td>
+                        </tr>
+                        </table>                                           
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                    <div class="review-content no-bottom">                  
+                      <p class="short_review " data-restaurant_key="vcheyGIxPJ9D" data-is_long_reivew="true">
+                          "매달 세째주 일요일 휴무. 매주 토요일 오후3시30분~오후6시 / 클래식음악감상회"
+                      </p>
+                      <p class="long_review ">                        
+                      </p>
+                  </div>     
+                </div>
+              </li>
+          
+              <!-- 2 -->  
+              <li class="toplist_list">
+                <div class="with-review">
+                  <figure class="restaurant-item">
+                    <a href="main">
+                      <div class="thumb">
+                        <img class="center-croping lazy" alt="..." src="resources/image/PositicveZero.png" style="display: block;">
+                      </div>
+                    </a>
+                    <figcaption>
+                      <div class="info">                        
+                        <span class="title ">
+                          <a href="/restaurants/vcheyGIxPJ9D">
+                            <h3>2. 포지티브 제로 라운지</h3>
+                          </a>
+                        </span>
+                        
+                        <p/>
+                        <table>
+                        <tr class="etc">
+                        	<th style="width: 110px; padding-bottom: 5px; padding-right:10px;">주소</th>
+                        	<td style="padding-bottom: 5px;">서울특별시 성동구 연무장길 14-2</td>
+                        </tr>
+                        <tr class="etc">
+                        	<th style="width: 110px; padding-bottom: 5px; padding-right:10px;">연락처</th>
+                        	<td style="padding-bottom: 5px;">02-462-5994</td>
+                        </tr>
+                        <tr class="etc">
+                        	<th style="vertical-align:top; width: 110px; padding-bottom: 5px; padding-right:10px;">영업 시간</th>
+                        	<td style="padding-bottom: 5px;">수-일: 19:00 - 00:30<br>
+                        									 월,화: 휴무</td>
+                        </tr>
+                        </table>                                           
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                    <div class="review-content no-bottom">                  
+                      <p class="short_review " data-restaurant_key="vcheyGIxPJ9D" data-is_long_reivew="true">
+                          "The Sound of Jazz 포지티브 제로 라운지는 매일 밤 재즈 라이브 공연이 펼쳐지는 서울의 대표적인 재즈바입니다. 눈에 잘 띄지 않는 숨겨진 입구를 찾아 지하로 걸어 내려오세요. 한국을 대표하는 톱 클래스 재즈 뮤지션들의 공연이 매일 밤 펼쳐집니다. 평소 쉽게 접하기 힘든 다채로운 색깔의 라이브 연주를 감상하며 술과 음식을 즐길 수 있습니다. 공연 스케줄과 뮤지션 정보는 인스타그램 @positive_zero_lounge에서 확인하실 수 있습니다."
+                      </p>
+                      <p class="long_review ">                        
+                      </p>
+                  </div>     
+                </div>
+              </li>
+              
+              <!-- 3 -->  
+              <li class="toplist_list">
+                <div class="with-review">
+                  <figure class="restaurant-item">
+                    <a href="main">
+                      <div class="thumb">
+                        <img class="center-croping lazy" alt="..." src="resources/image/BlumingJazz.png" style="display: block;">
+                      </div>
+                    </a>
+                    <figcaption>
+                      <div class="info">                        
+                        <span class="title ">
+                          <a href="/restaurants/vcheyGIxPJ9D">
+                            <h3>3. 블루밍 재즈바</h3>
+                          </a>
+                        </span>
+                        
+                        <p/>
+                        <table>
+                        <tr class="etc">
+                        	<th style="width: 110px; padding-bottom: 5px; padding-right:10px;">주소</th>
+                        	<td style="padding-bottom: 5px;">서울특별시 강남구 테헤란로19길 21 지하 1층</td>
+                        </tr>
+                        <tr class="etc">
+                        	<th style="width: 110px; padding-bottom: 5px; padding-right:10px;">연락처</th>
+                        	<td style="padding-bottom: 5px;">0507-1466-5026</td>
+                        </tr>
+                        <tr class="etc">
+                        	<th style="vertical-align:top; width: 110px; padding-bottom: 5px; padding-right:10px;">영업 시간</th>
+                        	<td style="padding-bottom: 5px;">수-토: 19:00 - 02:00<br>
+                        									 일,월,화: 휴무일</td>
+                        </tr>
+                        </table>                                           
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                    <div class="review-content no-bottom">                  
+                      <p class="short_review " data-restaurant_key="vcheyGIxPJ9D" data-is_long_reivew="true">
+                          라이즈 재즈바 블루밍입니다. 
+                          몰트와 위스키, 와인 위주로 판매하고 있고 간단한 요리와 칵테일, 맥주도 준비되어 있습니다.
+                          현재 활동중인 핫한 재즈밴드 라이브 공연도 금,토요일에 진행 중입니다!
+                          자세한 공연 정보는 인스타그램에서 보실 수 있습니다.
+                      </p>
+                      <p class="long_review ">                        
+                      </p>
+                  </div>     
+                </div>
+              </li>
+              
+              <!-- 4 -->  
+              <li class="toplist_list">
+                <div class="with-review">
+                  <figure class="restaurant-item">
+                    <a href="main">
+                      <div class="thumb">
+                        <img class="center-croping lazy" alt="..." src="http://ugcc.net/list/data/liveclub/1407580011/evans.jpg" data-error="https://mp-seoul-image-production-s3.mangoplate.com/web/resources/kssf5eveeva_xlmy.jpg?fit=around|*:*&amp;crop=*:*;*,*&amp;output-format=jpg&amp;output-quality=80" style="display: block;">
+                      </div>
+                    </a>
+                    <figcaption>
+                      <div class="info">                        
+                        <span class="title ">
+                          <a href="/restaurants/vcheyGIxPJ9D">
+                            <h3>4. 클럽 에반스 club evans</h3>
+                          </a>
+                        </span>
+                        
+                        <p/>
+                        <table>
+                        <tr class="etc">
+                        	<th style="width: 110px; padding-bottom: 5px; padding-right:10px;">주소</th>
+                        	<td style="padding-bottom: 5px;">서울특별시 마포구 서교동 407-3</td>
+                        </tr>
+                        <tr class="etc">
+                        	<th style="width: 110px; padding-bottom: 5px; padding-right:10px;">연락처</th>
+                        	<td style="padding-bottom: 5px;">02-337-8361</td>
+                        </tr>
+                        <tr class="etc">
+                        	<th style="vertical-align:top; width: 110px; padding-bottom: 5px; padding-right:10px;">영업 시간</th>
+                        	<td style="padding-bottom: 5px;">일-월: 19:30 - 23:30<br>
+                        									 금-토: 19:30 - 02:00</td>
+                        </tr>
+                        </table>                                           
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                    <div class="review-content no-bottom">                  
+                      <p class="short_review " data-restaurant_key="vcheyGIxPJ9D" data-is_long_reivew="true">
+                          홍대에서 가장 오래된 클럽 중 하나로, 재즈 밴드의 라이브를 즐길 수 있는 곳입니다. 공연을 즐길 때는 음료 가격에 공연문화비를 추가로 지불하면 됩니다.
+                      </p>
+                      <p class="long_review ">                        
+                      </p>
+                  </div>     
+                </div>
+              </li>
+              
+              <!-- 5 -->  
+              <li class="toplist_list">
+                <div class="with-review">
+                  <figure class="restaurant-item">
+                    <a href="main">
+                      <div class="thumb">
+                        <img class="center-croping lazy" alt="..." src="https://lh3.googleusercontent.com/p/AF1QipN0Qc6dZ_aLHct_dcuuJxnBwoCqymXvX1b-pWvG=s680-w680-h510" data-original="https://mp-seoul-image-production-s3.mangoplate.com/280896/1100616_1664639802208_45044?fit=around|738:738&amp;crop=738:738;*,*&amp;output-format=jpg&amp;output-quality=80" style="display: block;">
+                      </div>
+                    </a>
+                    <figcaption>
+                      <div class="info">                        
+                        <span class="title ">
+                          <a href="/restaurants/vcheyGIxPJ9D">
+                            <h3>5. JZ카페</h3>
                           </a>
                         </span>
                         
@@ -116,164 +270,23 @@
                         <tr class="etc">
                         	<th style="vertical-align:top; width: 110px; padding-bottom: 5px; padding-right:10px;">영업 시간</th>
                         	<td style="padding-bottom: 5px;">월-금: 17:00 - 02:00<br>
-                        		토-일: 14:00 - 02:00</td>
+                        									 토-일: 14:00 - 02:00</td>
                         </tr>
                         </table>                                           
                       </div>
                     </figcaption>
                   </figure>
 
-                    <div class="review-content no-bottom">
-                    
-                      <p class="short_review " data-restaurant_key="vcheyGIxPJ9D" data-is_long_reivew="
-                        true
-                        ">
+                    <div class="review-content no-bottom">                  
+                      <p class="short_review " data-restaurant_key="vcheyGIxPJ9D" data-is_long_reivew="true">
                           김영수 씨가 운영하는 재즈 카페. 편안하고 아늑한 분위기에서 재즈선율을 들을 수 있는 곳.
                       </p>
-
-                      <p class="long_review ">
-                         
+                      <p class="long_review ">                        
                       </p>
-
-                        
-                    </div>     
+                  </div>     
                 </div>
-              </li>
-          
-              <li class="toplist_list">
-                <div class="with-review">
-                  <figure class="restaurant-item">
-                    <a href="main">
-                      <div class="thumb">
-                        <img class="center-croping lazy" alt="껠끄쇼즈 사진 - 서울특별시 강남구 도곡로70길 5" src="https://lh3.googleusercontent.com/p/AF1QipN0Qc6dZ_aLHct_dcuuJxnBwoCqymXvX1b-pWvG=s680-w680-h510" data-original="https://mp-seoul-image-production-s3.mangoplate.com/280896/1100616_1664639802208_45044?fit=around|738:738&amp;crop=738:738;*,*&amp;output-format=jpg&amp;output-quality=80" data-error="https://mp-seoul-image-production-s3.mangoplate.com/web/resources/kssf5eveeva_xlmy.jpg?fit=around|*:*&amp;crop=*:*;*,*&amp;output-format=jpg&amp;output-quality=80" style="display: block;">
-                      </div>
-                    </a>
-                    <figcaption>
-                      <div class="info">
-                        <div class="wannago_wrap">
-                          <button class="btn-type-icon favorite wannago_btn " data-restaurant_uuid="280896" data-action_id="">
-                          </button>
-                          <p class="wannago_txt">가고싶다 </p>
-                        </div>
-                        <span class="title ">
-                          <a href="/restaurants/vcheyGIxPJ9D">
-                            1.<h3> 껠끄쇼즈</h3>
-                          </a>
-                        </span>
-                        <strong class="point  ">
-                          <span>4.5</span>
-                        </strong>
-                        <p class="etc ">서울특별시 강남구 도곡로70길 5</p>
-                      </div>
-                    </figcaption>
-                  </figure>
-
-                    <div class="review-content no-bottom">
-                    
-                      <p class="short_review " data-restaurant_key="vcheyGIxPJ9D" data-is_long_reivew="
-                        true
-                        ">
-                          무화과 소비가 지금처럼 대중적이지 않던 시절, 거의 최초로 무화과 디저트를 선보였던 껠끄쇼즈. 갸또는 1세대 무화과 디저트라 할 수 있는 무화과...
-                      </p>
-
-                      <p class="long_review ">
-                        무화과 소비가 지금처럼 대중적이지 않던 시절, 거의 최초로 무화과 디저트를 선보였던 껠끄쇼즈. 갸또는 1세대 무화과 디저트라 할 수 있는 무화과 끌라시끄. 블루치즈도 사용한 만큼 쿰쿰하고 짭쪼름한 풍미도 느껴지는데 피스타치오 다쿠아즈와도, 바닐라향 가득한 무슬린 크림과도 잘 어울려 이질감은 없다. 오히려 성공적인 승부수의 느낌이 강한 편. 
-                      </p>
-
-                        <span class="review_more_btn">더보기</span>
-                    </div>     
-                </div>
-              </li>
-              
-			<li class="toplist_list">
-                <div class="with-review">
-                  <figure class="restaurant-item">
-                    <a href="main">
-                      <div class="thumb">
-                        <img class="center-croping lazy" alt="껠끄쇼즈 사진 - 서울특별시 강남구 도곡로70길 5" data-original="https://mp-seoul-image-production-s3.mangoplate.com/280896/1100616_1664639802208_45044?fit=around|738:738&amp;crop=738:738;*,*&amp;output-format=jpg&amp;output-quality=80" data-error="https://mp-seoul-image-production-s3.mangoplate.com/web/resources/kssf5eveeva_xlmy.jpg?fit=around|*:*&amp;crop=*:*;*,*&amp;output-format=jpg&amp;output-quality=80" src="https://mp-seoul-image-production-s3.mangoplate.com/280896/1100616_1664639802208_45044?fit=around|738:738&amp;crop=738:738;*,*&amp;output-format=jpg&amp;output-quality=80" style="display: block;">
-                      </div>
-                    </a>
-                    <figcaption>
-                      <div class="info">
-                        <div class="wannago_wrap">
-                          <button class="btn-type-icon favorite wannago_btn " data-restaurant_uuid="280896" data-action_id="">
-                          </button>
-                          <p class="wannago_txt">가고싶다 </p>
-                        </div>
-                        <span class="title ">
-                          <a href="/restaurants/vcheyGIxPJ9D">
-                            1.<h3> 껠끄쇼즈</h3>
-                          </a>
-                        </span>
-                        <strong class="point  ">
-                          <span>4.5</span>
-                        </strong>
-                        <p class="etc ">서울특별시 강남구 도곡로70길 5</p>
-                      </div>
-                    </figcaption>
-                  </figure>
-
-                    <div class="review-content no-bottom">
-                    
-                      <p class="short_review " data-restaurant_key="vcheyGIxPJ9D" data-is_long_reivew="
-                        true
-                        ">
-                          무화과 소비가 지금처럼 대중적이지 않던 시절, 거의 최초로 무화과 디저트를 선보였던 껠끄쇼즈. 갸또는 1세대 무화과 디저트라 할 수 있는 무화과...
-                      </p>
-
-                      <p class="long_review ">
-                        무화과 소비가 지금처럼 대중적이지 않던 시절, 거의 최초로 무화과 디저트를 선보였던 껠끄쇼즈. 갸또는 1세대 무화과 디저트라 할 수 있는 무화과 끌라시끄. 블루치즈도 사용한 만큼 쿰쿰하고 짭쪼름한 풍미도 느껴지는데 피스타치오 다쿠아즈와도, 바닐라향 가득한 무슬린 크림과도 잘 어울려 이질감은 없다. 오히려 성공적인 승부수의 느낌이 강한 편. 
-                      </p>
-
-                        <span class="review_more_btn">더보기</span>
-                    </div>     
-                </div>
-              </li>                
-                         
-			<li class="toplist_list">
-                <div class="with-review">
-                  <figure class="restaurant-item">
-                    <a href="main">
-                      <div class="thumb">
-                        <img class="center-croping lazy" alt="껠끄쇼즈 사진 - 서울특별시 강남구 도곡로70길 5" data-original="https://mp-seoul-image-production-s3.mangoplate.com/280896/1100616_1664639802208_45044?fit=around|738:738&amp;crop=738:738;*,*&amp;output-format=jpg&amp;output-quality=80" data-error="https://mp-seoul-image-production-s3.mangoplate.com/web/resources/kssf5eveeva_xlmy.jpg?fit=around|*:*&amp;crop=*:*;*,*&amp;output-format=jpg&amp;output-quality=80" src="https://mp-seoul-image-production-s3.mangoplate.com/280896/1100616_1664639802208_45044?fit=around|738:738&amp;crop=738:738;*,*&amp;output-format=jpg&amp;output-quality=80" style="display: block;">
-                      </div>
-                    </a>
-                    <figcaption>
-                      <div class="info">
-                        <div class="wannago_wrap">
-                          <button class="btn-type-icon favorite wannago_btn " data-restaurant_uuid="280896" data-action_id="">
-                          </button>
-                          <p class="wannago_txt">가고싶다 </p>
-                        </div>
-                        <span class="title ">
-                          <a href="/restaurants/vcheyGIxPJ9D">
-                            1.<h3> 껠끄쇼즈</h3>
-                          </a>
-                        </span>
-                        <strong class="point  ">
-                          <span>4.5</span>
-                        </strong>
-                        <p class="etc ">서울특별시 강남구 도곡로70길 5</p>
-                      </div>
-                    </figcaption>
-                  </figure>
-
-                    <div class="review-content no-bottom">
-                    
-                      <p class="short_review " data-restaurant_key="vcheyGIxPJ9D" data-is_long_reivew="
-                        true
-                        ">
-                          무화과 소비가 지금처럼 대중적이지 않던 시절, 거의 최초로 무화과 디저트를 선보였던 껠끄쇼즈. 갸또는 1세대 무화과 디저트라 할 수 있는 무화과...
-                      </p>
-
-                      <p class="long_review ">
-                        무화과 소비가 지금처럼 대중적이지 않던 시절, 거의 최초로 무화과 디저트를 선보였던 껠끄쇼즈. 갸또는 1세대 무화과 디저트라 할 수 있는 무화과 끌라시끄. 블루치즈도 사용한 만큼 쿰쿰하고 짭쪼름한 풍미도 느껴지는데 피스타치오 다쿠아즈와도, 바닐라향 가득한 무슬린 크림과도 잘 어울려 이질감은 없다. 오히려 성공적인 승부수의 느낌이 강한 편. 
-                      </p>
-
-                        <span class="review_more_btn">더보기</span>
-                    </div>     
-                </div>
-              </li>                             
+              </li> 
+                                         
           </ul>
 		</div>
 	</div>
@@ -283,15 +296,8 @@
     
 
 
-	<!-- Footer -->
-	<footer class="bg-dark text-center text-lg-start">
-		<!-- Copyright -->
-		<div class="text-center p-3" style="color: white;">
-			© 2020 Copyright: <a class="text-white"
-				href="https://mdbootstrap.com/">MDBootstrap.com</a>
-		</div>
-		<!-- Copyright -->
-	</footer>
+	<!-- footer here -->
+<jsp:include page="./common/footer.jsp" />
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

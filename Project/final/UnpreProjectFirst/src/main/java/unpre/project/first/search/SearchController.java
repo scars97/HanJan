@@ -21,10 +21,12 @@ public class SearchController {
 	public ModelAndView list(@RequestParam Map<String, Object> map) {
 
 		List<Map<String, Object>> list = this.searchService.searchList(map);
-
+		List<Map<String, Object>> nicknameList = this.searchService.nicknameDistinct(map);
+		
 		ModelAndView mav = new ModelAndView();
 
 		mav.addObject("data", list);
+		mav.addObject("nickname", nicknameList);
 
 		if (map.containsKey("keyword")) {
 			mav.addObject("keyword", map.get("keyword"));

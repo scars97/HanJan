@@ -61,7 +61,7 @@
 					<tr>
 						<td style="width: 8%; border-left: none;">
 							<a href="/detail?bNum=${row.b_num}">${row.b_num}</a>
-						<td style="width: 10%;">${row.nickname}</td>
+						<td style="width: 20%;">${row.nickname}</td>
 						<td style="width: 12%;">${row.category}</td>
 						<td><a href="/detail?bNum=${row.b_num}">${row.b_title}</a></td>
 						<td style="width: 9%; border-right: none;">

@@ -194,7 +194,6 @@ select, input {
 }
 
 hr {
-	display: none;
 	border: 0 none
 }
 
@@ -7920,12 +7919,12 @@ background-position
 	.type-single-big .review-content {
 		bottom: 0;
 		margin-top: 13px;
-		margin-left: 210px;
-		padding-left: 52px;
+		margin-left: 240px;
+		padding-left: 25px;
 		font-size: 1.000rem;
 		line-height: 25px;
 		margin-bottom: 80px;
-		padding-bottom: 60px
+		/* padding-bottom: 60px */
 	}
 	.type-single-big .review-content.no-bottom {
 		margin-bottom: 0

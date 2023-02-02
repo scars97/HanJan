@@ -17,4 +17,9 @@ public class SearchDAO {
 	public List<Map<String, Object>> selectList(Map<String, Object> map) {
 		return this.sqlSessionTemplate.selectList("board.select_list", map);
 	}
+	
+	//게시글 닉네임 중복제거
+	public List<Map<String, Object>> distinct(Map<String, Object> map) {
+		return this.sqlSessionTemplate.selectList("user.distinct", map);
+	}
 }

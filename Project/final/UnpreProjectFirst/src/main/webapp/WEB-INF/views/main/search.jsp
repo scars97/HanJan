@@ -42,41 +42,29 @@
 		<ul>
 			<li>
 			<a href="/detail?bNum=${row.b_num}">${row.b_title}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <fmt:formatDate value="${row.cdate}" pattern="yyyy.MM.dd" />
-			</li>
-	
+			</li>	
 		</ul>
-		</c:forEach>
-			
+		</c:forEach>			
 		<a href="http://localhost:8081/list?keyword=${keyword}" class="result_more">게시물 더보기 ▶</a>
-	</div>
-	
-	
-	
-	
+	</div>	
 	
 	
 	<div class="integrate_cont">
 		<div>
-		<h3>작성자</h3>
+		<h3>닉네임</h3>
 		</div>
+		<c:forEach var="row2" items="${nickname}">
 		<ul>
 			<li>
-			<a href="">죄와인간</a>
-			</li>
-			<li>
-			<a href="">와인머임</a>
-			</li>
-			<li>
-			<a href="">서울와인</a>
-			</li>
-			<li>
-			<a href="">바다와인어</a>
-			</li>
-			<li>
-			<a href="">와인코리아</a>
+			<a href="/list?keyword=${row2.nickname}">${row2.nickname}</a>
 			</li>
 		</ul>
-		<a href="" class="result_more">작성자 더보기 ▶</a>
+
+		</c:forEach>
+		<a href="" class="result_more">닉네임 더보기 ▶</a>
+		
+		
+		
 	</div>
 	<div class="integrate_cont">
 		<div>

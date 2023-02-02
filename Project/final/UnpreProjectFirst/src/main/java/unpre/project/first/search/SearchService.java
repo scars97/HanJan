@@ -7,5 +7,8 @@ public interface SearchService {
 
 	List<Map<String, Object>> searchList(Map<String, Object> map);
 
+	//닉네임 중복제거
+	List<Map<String, Object>> nicknameDistinct(Map<String, Object> map);
+
 	
 }

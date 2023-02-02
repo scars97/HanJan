@@ -19,4 +19,10 @@ public class SearchServiceImpl implements SearchService{
 	public List<Map<String, Object>> searchList(Map<String, Object> map){  
 		return this.searchDao.selectList(map);
 	}
+	
+	//게시글 목록
+	@Override  
+	public List<Map<String, Object>> nicknameDistinct (Map<String, Object> map){  
+		return this.searchDao.distinct(map);
+	}
 }

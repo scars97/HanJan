@@ -53,7 +53,7 @@
             <c:if test="${board.category eq '위스키'}">
             <tr>
                <td style="width: 8%; border-left: none;"><a href="/detail?bNum=${board.b_num}">${board.b_num}</a></td>
-               <td style="width: 10%;">${board.nickname}</td>
+               <td style="width: 20%;">${board.nickname}</td>
                <td style="width: 10%;">${board.category}</td>
                <td><a href="/detail?bNum=${board.b_num}">${board.b_title}</a></td>
                <td style="width: 9%; border-right: none;"><fmt:formatDate value="${board.cdate}" pattern="yyyy.MM.dd" /></td>

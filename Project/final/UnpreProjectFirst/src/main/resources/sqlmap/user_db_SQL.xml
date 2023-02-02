@@ -35,5 +35,22 @@
     ]]>
 	</update>
 
+	<!-- 아이디 중복제거 -->
+	<select id="distinct" parameterType="hashMap"
+		resultType="hashMap">  
+   <![CDATA[  
+   select
+   nickname
+   from
+   user   
+   where 1=1
+
+   ]]>
+		<if test="keyword != null and keyword != ''">
+			and (nickname like CONCAT('%',#{keyword},'%'))
+		</if>
+		
+	</select>
+
 
 </mapper>

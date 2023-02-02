@@ -11,9 +11,9 @@
     ]]>
 	</insert>
 
-<!-- 게시글 목록 + 검색 쿼리 -->
-   <select id="select_list" parameterType="hashMap"
-      resultType="hashMap">  
+	<!-- 게시글 목록 + 검색 쿼리 -->
+	<select id="select_list" parameterType="hashMap"
+		resultType="hashMap">  
    <![CDATA[  
    select
    nickname, 
@@ -27,21 +27,17 @@
    where 1=1
 
    ]]>
-      <if test="keyword != null and keyword != ''">
-         and (category like CONCAT('%',#{keyword},'%') 
-         or b_title like CONCAT('%',#{keyword},'%')
-         or b_content like CONCAT('%',#{keyword},'%') 
-         or user_id like CONCAT('%',#{keyword},'%') 
-         or nickname like CONCAT('%',#{keyword},'%')
-         )
-      </if>
+		<if test="keyword != null and keyword != ''">
+			and (category like CONCAT('%',#{keyword},'%')
+			or b_title like CONCAT('%',#{keyword},'%')
+			or b_content like CONCAT('%',#{keyword},'%')
+			or user_id like CONCAT('%',#{keyword},'%')
+			or nickname like CONCAT('%',#{keyword},'%')
+			)
+		</if>
+		order by b_num desc
+	</select>
 
-
-      order by cdate desc
-
-   </select>
-	
-	
 
 	<!-- 내가 쓴 글 찾아오기 -->
 	<select id="myboard_list" parameterType="hashMap"
@@ -62,8 +58,8 @@
 	where user_id = #{user_id};
    	]]>
 	</update>
-	
-	
+
+
 	<!-- 게시글 상세 쿼리 -->
 	<select id="select_detail" parameterType="hashMap"
 		resultType="hashMap">
@@ -101,4 +97,6 @@
    b_num = #{bNum}  
    ]]>
 	</delete>
+
+
 </mapper>

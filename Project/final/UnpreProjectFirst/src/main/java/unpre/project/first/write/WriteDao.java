@@ -46,4 +46,5 @@ public class WriteDao {
 		return this.sqlSessionTemplate.selectList("board.myboard_list", map);
 	}
 	
+	
 }
