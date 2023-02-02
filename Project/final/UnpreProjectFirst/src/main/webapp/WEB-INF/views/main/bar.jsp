@@ -46,7 +46,7 @@
 				<div class="col" style="height: 380px">
 					<a href="bar2">
 					<div class="card mx-auto" style="width:100%; height:380px;">				
-					<img src="resources/image/slideimg.png" width="100%" height="100%" >					
+					<img src="resources/image/slideimg.png" width="100%" height="100%">					
 					<div class="card-img-overlay">
 					<h2 style="position: absolute; top: 50%; left: 50%; 
 						transform: translate(-50%, -50%); color:black;">재즈 Bar</h2>
@@ -58,10 +58,10 @@
 				<div class="col" style="height: 380px">
 					<a href="bar2">
 					<div class="card mx-auto" style="width:100%; height:380px;">				
-					<img src="resources/image/slideimg.png" width="100%" height="100%" >					
+					<!-- <img src="resources/image/slideimg.png" width="100%" height="100%" > -->					
 					<div class="card-img-overlay">
 					<h2 style="position: absolute; top: 50%; left: 50%; 
-						transform: translate(-50%, -50%); color:black;">재즈 Bar</h2>
+						transform: translate(-50%, -50%); color:black;">추가 예정</h2>
 					</div>
 					</div>
 					</a>
@@ -70,10 +70,10 @@
 				<div class="col" style="height: 380px">
 					<a href="bar2">
 					<div class="card mx-auto" style="width:100%; height:380px;">				
-					<img src="resources/image/slideimg.png" width="100%" height="100%" >					
+					<!-- <img src="resources/image/slideimg.png" width="100%" height="100%" > -->					
 					<div class="card-img-overlay">
 					<h2 style="position: absolute; top: 50%; left: 50%; 
-						transform: translate(-50%, -50%); color:black;">재즈 Bar</h2>
+						transform: translate(-50%, -50%); color:black;">추가 예정</h2>
 					</div>
 					</div>
 					</a>
@@ -82,10 +82,10 @@
 				<div class="col" style="height: 380px">
 					<a href="bar2">
 					<div class="card mx-auto" style="width:100%; height:380px;">				
-					<img src="resources/image/slideimg.png" width="100%" height="100%" >					
+					<!-- <img src="resources/image/slideimg.png" width="100%" height="100%" > -->					
 					<div class="card-img-overlay">
 					<h2 style="position: absolute; top: 50%; left: 50%; 
-						transform: translate(-50%, -50%); color:black;">재즈 Bar</h2>
+						transform: translate(-50%, -50%); color:black;">추가 예정</h2>
 					</div>
 					</div>
 					</a>
