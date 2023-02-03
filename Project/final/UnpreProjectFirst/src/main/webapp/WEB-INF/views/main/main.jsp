@@ -76,12 +76,6 @@
 </main><br><br>
 
 
-		<%-- <form method="get" action="search">
-			<input class="form-control me-2"
-				style="width: 15%; float: left; margin: 0 auto" type="text"
-				placeholder="검색" name="keyword" value="${keyword}" /> <input
-				class="btn btn-outline-success" type="submit" value="검색" />
-		</form> --%>
 <jsp:include page="./common/searchbar.jsp"/><br> 
 
 <div class="container text-center">
