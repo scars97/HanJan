@@ -22,6 +22,9 @@
 	rel="stylesheet">
 <link rel="stylesheet"
 		href="resources/css/bar2.css">
+<link rel="stylesheet" media="screen and (max-width: 1200px)"
+		href="resources/css/media.css">
+		
 </head>
 <body>
 	<!-- upper navbar here -->
