@@ -80,24 +80,34 @@
 
 <div class="container text-center">
   <div class="row m-5">
+  
     <div class="col">
+    <a href="whiskylist">
       <img src="/resources/image/mainwhiskey1.png" style="width:200px; height:150px; border-radius: 10%; background-color: rgba(0,0,0,0.1);">
       <h3 class="main_image_text">#위스키에 대해 알아보자</h3>
+      </a>
     </div>
+    
     <div class="col">
+    <a href="winelist">
       <img src="/resources/image/mainwine.png" style="width:200px; height:150px; border-radius: 10%;">
       <h3 class="main_image_text">#와인은 어렵지 않다!</h3>
+    </a>
     </div>
+    
     <div class="col">
+    <a href="beerlist">
       <img src="/resources/image/mainbeer.png" style="width:200px; height:150px; border-radius: 10%;">
       <h3 class="main_image_text">#가장 맛있는 맥주는?</h3>
+    </a>
     </div>
+    
     <div class="col">
       <img src="/resources/image/mainfood.png" style="width:200px; height:150px; border-radius: 10%;">
       <h3 class="main_image_text">#숙취해소엔</h3>
     </div>
+    
   </div>
-  
 </div>
 
 <!-- footer here -->

@@ -29,9 +29,9 @@
 <body>
 
 	<!-- upper navbar here -->
-	<jsp:include page="./common/navbar.jsp" />
+	<jsp:include page="../common/navbar.jsp" />
 
-	<jsp:include page="./common/mypageheader.jsp" />
+	<jsp:include page="./mypageheader.jsp" />
 
 
 	<div class="container">
@@ -110,7 +110,7 @@
 	<br>
 
 	<!-- footer here -->
-	<jsp:include page="./common/footer.jsp" />
+	<jsp:include page="../common/footer.jsp" />
 
 
 <!-- CLOUDTURING 챗봇 -->

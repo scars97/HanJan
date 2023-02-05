@@ -23,7 +23,7 @@
 <body>
 
 	<!-- upper navbar here -->
-	<jsp:include page="./common/navbar.jsp" />
+	<jsp:include page="../common/navbar.jsp" />
 
 	<div class="container" style="margin-top: 50px; margin-bottom: 50px;">
 
@@ -99,7 +99,7 @@
 	<br>
 
 	<!-- footer here -->
-	<jsp:include page="./common/footer.jsp" />
+	<jsp:include page="../common/footer.jsp" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

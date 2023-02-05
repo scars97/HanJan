@@ -26,10 +26,10 @@
 <body>
 	<!-- Navigator -->
 	<!-- upper navbar here -->
-	<jsp:include page="./common/navbar.jsp" />
+	<jsp:include page="../common/navbar.jsp" />
 
 	<!-- Content -->
-	<jsp:include page="./common/mypageheader.jsp" />
+	<jsp:include page="./mypageheader.jsp" />
 
 	<div class="container">
 		<div class="row py-lg-5">
@@ -83,7 +83,7 @@
 
 	<!-- Footer -->
 	<!-- footer here -->
-	<jsp:include page="./common/footer.jsp" />
+	<jsp:include page="../common/footer.jsp" />
 
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

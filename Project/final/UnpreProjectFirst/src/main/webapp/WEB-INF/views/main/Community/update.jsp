@@ -24,7 +24,7 @@
 <body>
 
 	<!-- upper navbar here -->
-	<jsp:include page="./common/navbar.jsp"/>
+	<jsp:include page="../common/navbar.jsp"/>
 	<div class="container">
 	<h3>게시글 수정</h3>
 	&nbsp;
@@ -63,7 +63,7 @@
 	</form>
 </div>
 	<!-- footer here -->
-		<jsp:include page="./common/footer.jsp"/>
+		<jsp:include page="../common/footer.jsp"/>
 </body>
 
 		

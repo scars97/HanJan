@@ -21,7 +21,7 @@ public class UserController {
 
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
 	public ModelAndView signup() {
-		return new ModelAndView("main/signup");
+		return new ModelAndView("main/SignUp/signup");
 	}
 
 	@RequestMapping(value = "/signup.do", method = RequestMethod.POST)
@@ -38,13 +38,13 @@ public class UserController {
 	//로그인 화면 구현
 	@RequestMapping(value = "/login")
 	public String login() {
-		return "main/login";
+		return "main/Login/login";
 	}
 	
 	//로그인 실패시 이동
 	@RequestMapping(value = "/login_fail")
 	public String loginFail() {
-		return "main/login_fail";
+		return "main/Login/login_fail";
 	}
 
 	//로그인시 db에 있는 유저데이터 확인하고 데이터 가져옴
@@ -75,12 +75,12 @@ public class UserController {
 
 	@RequestMapping(value = "/mypage", method = RequestMethod.GET)
 	public ModelAndView mypage() {
-		return new ModelAndView("main/mypage");
+		return new ModelAndView("main/MyPage/mypage");
 	}
 
 	@RequestMapping(value = "/mypagechange", method = RequestMethod.GET)
 	public ModelAndView mypagechange() {
-		return new ModelAndView("main/mypagechange");
+		return new ModelAndView("main/MyPage/mypagechange");
 	}
 	
 	@RequestMapping(value = "/mypageupdate.do", method = RequestMethod.POST)
@@ -112,7 +112,7 @@ public class UserController {
 		if (map.containsKey("keyword")) {
 			mav.addObject("keyword", map.get("keyword"));
 		}
-		mav.setViewName("main/mypageboard");
+		mav.setViewName("main/MyPage/mypageboard");
 		
 		return mav;
 	}

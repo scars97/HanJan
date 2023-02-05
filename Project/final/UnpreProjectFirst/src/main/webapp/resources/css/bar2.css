@@ -25,7 +25,10 @@
 }
 
 .etc_add td {
-	padding-bottom: 5px; } .etc_tel th {
+	padding-bottom: 5px; 
+} 
+	
+.etc_tel th {
 	width: 110px;
 	padding-bottom: 5px;
 	padding-right: 10px;
@@ -45,6 +48,16 @@
 .etc_time td {
 	padding-bottom: 5px;
 }
+
+.etc_category th {
+	width: 110px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+}
+
+.etc_origin td {
+	padding-bottom: 5px; 
+} 
 
 .review-content {
 	padding-left: 350px;

@@ -21,24 +21,23 @@
    rel="stylesheet"
    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
    crossorigin="anonymous">
-
-<meta charset="UTF-8">
-<title>위스키🥃 게시판</title>
 <link href="/resources/css/mypage.css" rel="stylesheet">
+<meta charset="UTF-8">
+<title>맥주🍺 게시판</title>
 </head>
 <body>
 
    <!-- upper navbar here -->
-   <jsp:include page="./common/navbar.jsp" />
+   <jsp:include page="../common/navbar.jsp" />
 
    <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
 
-   <h3 style="margin-left: 10%;">위스키🥃 게시판</h3>
+   <h3 style="margin-left: 10%;">맥주🍺 게시판</h3>
    &nbsp; &nbsp;
    <table class="type07" style="text-align: center; width: 80%;">
       <thead>
          <tr>
-            <th>번호</th>
+            <th style="text-align: center;">번호</th>
             <th>작성자</th>
             <th>카테고리</th>
             <th>제목</th>
@@ -50,7 +49,7 @@
       </thead>
       <tbody>
          <c:forEach var="board" items="${data}">
-            <c:if test="${board.category eq '위스키'}">
+            <c:if test="${board.category eq '맥주'}">
             <tr>
                <td style="width: 8%; border-left: none;"><a href="/detail?bNum=${board.b_num}">${board.b_num}</a></td>
                <td style="width: 20%;">${board.nickname}</td>
@@ -65,7 +64,7 @@
       </tbody>
    </table>
 
-		<div style="width: 90%;">
+   <div style="width: 90%;">
 			<c:if test="${signIn != null}">
 				<input type="button" value="글쓰기"
 					style="float: right; background-color: #1e2539; border: none;"
@@ -81,6 +80,7 @@
 				placeholder="검색" name="keyword" value="${keyword}" /> 
 			<input class="btn btn-outline-success" type="submit" value="검색" />
 		</form>
+  
    
    <br>
 
@@ -99,7 +99,7 @@
    <br>
    
    <!-- footer here -->
-   <jsp:include page="./common/footer.jsp" />
+   <jsp:include page="../common/footer.jsp" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

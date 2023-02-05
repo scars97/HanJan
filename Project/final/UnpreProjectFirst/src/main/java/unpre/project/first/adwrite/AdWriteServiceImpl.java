@@ -6,8 +6,6 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import unpre.project.first.write.WriteService;
-
 @Service
 public class AdWriteServiceImpl implements AdWriteService{
 

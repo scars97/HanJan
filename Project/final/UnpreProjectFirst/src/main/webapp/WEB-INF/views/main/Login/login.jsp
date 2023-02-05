@@ -34,7 +34,7 @@
 	
 </head>
 <body>
-	<jsp:include page="./common/navbar.jsp" />
+	<jsp:include page="../common/navbar.jsp" />
 
 	<div class="main-container">
 		<div class="main-wrap">
@@ -98,7 +98,7 @@
 
 	</div>
 	<div class="container-fluid" style="padding: 0px">
-		<jsp:include page="./common/footer.jsp" />
+		<jsp:include page="../common/footer.jsp" />
 	</div>
 	<script
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

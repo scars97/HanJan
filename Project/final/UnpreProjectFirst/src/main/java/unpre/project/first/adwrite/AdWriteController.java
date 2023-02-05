@@ -17,7 +17,7 @@ public class AdWriteController {
 
 	@RequestMapping(value = "/adwrite", method = RequestMethod.GET)
 	public ModelAndView adwrite() {
-		return new ModelAndView("main/adwrite/adwrite");
+		return new ModelAndView("main/AdminBoard/adwrite");
 
 	}
 
@@ -50,7 +50,7 @@ public class AdWriteController {
 			String adbNum = map.get("adbNum").toString();
 
 			mav.addObject("adbNum", adbNum); // 파라미터 넘겨주는?
-			mav.setViewName("/main/adwrite/Admin_detail"); // jsp 경로
+			mav.setViewName("/main/AdminBoard/Admin_detail"); // jsp 경로
 
 			return mav;
 		}
@@ -63,7 +63,7 @@ public class AdWriteController {
 
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("addata", addetailMap);
-		mav.setViewName("/main/adwrite/adupdate");
+		mav.setViewName("/main/AdminBoard/adupdate");
 		return mav;
 	}
 
@@ -113,7 +113,7 @@ public class AdWriteController {
 			mav.addObject("keyword", map.get("keyword"));
 		}
 
-		mav.setViewName("main/adwrite/adlist");
+		mav.setViewName("main/AdminBoard/adlist");
 		return mav;
 	}
 }

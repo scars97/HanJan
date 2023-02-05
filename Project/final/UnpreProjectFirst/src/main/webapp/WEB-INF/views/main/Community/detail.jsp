@@ -27,7 +27,7 @@
 <body> 
 
 	<!-- upper navbar here -->
-	<jsp:include page="./common/navbar.jsp"/>
+	<jsp:include page="../common/navbar.jsp"/>
 	<br>
 	<div class="container" style="width:70%">
 	<h3>${ data.category } 게시판</h3>
@@ -65,7 +65,7 @@
 	<br>
 	
 <!-- footer here -->
-	<jsp:include page="./common/footer.jsp"/>
+	<jsp:include page="../common/footer.jsp"/>
 	
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

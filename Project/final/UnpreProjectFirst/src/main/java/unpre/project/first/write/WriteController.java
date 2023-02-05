@@ -23,7 +23,7 @@ public class WriteController {
 
 	@RequestMapping(value = "/write", method = RequestMethod.GET)
 	public ModelAndView write() {
-		return new ModelAndView("main/write");
+		return new ModelAndView("main/Community/write");
 
 	}
 
@@ -55,7 +55,7 @@ public class WriteController {
 		String bNum = map.get("bNum").toString();
 
 		mav.addObject("bNum", bNum); // 파라미터 넘겨주는?
-		mav.setViewName("/main/detail"); // jsp 경로
+		mav.setViewName("/main/Community/detail"); // jsp 경로
 
 		return mav;
 		}
@@ -68,7 +68,7 @@ public class WriteController {
 
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("data", detailMap);
-		mav.setViewName("/main/update");
+		mav.setViewName("/main/Community/update");
 		return mav;
 	}
 
@@ -119,7 +119,7 @@ public class WriteController {
 			mav.addObject("keyword", map.get("keyword"));
 		}
 
-		mav.setViewName("main/list");
+		mav.setViewName("main/Community/list");
 		return mav;
 	}
 
@@ -136,7 +136,7 @@ public class WriteController {
 			mav.addObject("keyword", map.get("keyword"));
 		}
 
-		mav.setViewName("main/list_wine");
+		mav.setViewName("main/Community/list_wine");
 		return mav;
 	}
 
@@ -153,7 +153,7 @@ public class WriteController {
 			mav.addObject("keyword", map.get("keyword"));
 		}
 
-		mav.setViewName("main/list_beer");
+		mav.setViewName("main/Community/list_beer");
 		return mav;
 	}
 
@@ -170,7 +170,7 @@ public class WriteController {
 			mav.addObject("keyword", map.get("keyword"));
 		}
 
-		mav.setViewName("main/list_whisky");
+		mav.setViewName("main/Community/list_whisky");
 		return mav;
 	}
 }
