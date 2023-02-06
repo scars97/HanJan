@@ -14,22 +14,6 @@ public class ItemController {
 	@Autowired
 	ItemService itemService;
 
-	/*
-	 * @RequestMapping(value="/create", method = RequestMethod.GET) public
-	 * ModelAndView create() { return new ModelAndView("item/create"); }
-	 */
-	/*
-	 * @RequestMapping(value = "/create", method = RequestMethod.POST) public
-	 * ModelAndView createPost(@RequestParam Map<String, Object> map) { ModelAndView
-	 * mav = new ModelAndView();
-	 * 
-	 * String itemNum = this.itemService.create(map); if (itemNum == null) {
-	 * mav.setViewName("redirect:/create"); }else {
-	 * mav.setViewName("redirect:/introduce?itemNum=" +itemNum ); }
-	 * 
-	 * return mav; }
-	 */
-
 	//상세페이지
 	@RequestMapping(value = "/introduce", method = RequestMethod.GET)
 	public ModelAndView detail(@RequestParam Map<String, Object> map) {

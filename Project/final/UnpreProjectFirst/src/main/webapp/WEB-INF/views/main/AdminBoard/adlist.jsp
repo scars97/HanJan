@@ -44,15 +44,12 @@
 					<th>제목</th>
 					<th>작성일</th>
 					<th style="display: none;">내용</th>
-
-
-
 				</tr>
 			</thead>
 			<tbody>
 				<c:forEach var="row" items="${addata}">
 					<tr>
-						<th style="width: 8%; border-left: none;"><a href="/detail?bNum=${row.adb_num}">${row.adb_num}</a></th>
+						<td style="width: 8%; border-left: none;"><a href="/detail?bNum=${row.adb_num}">${row.adb_num}</a></td>
 						<td style="width: 10%;">관리자</td>
 						<td style="width: 10%;">${row.ad_category}</td>
 						<td><a href="/Admin_detail?adbNum=${row.adb_num}">${row.adb_title}</a></td>
@@ -71,7 +68,7 @@
 				<input type="button" value="글쓰기"
 					style="float: right; background-color: #1e2539; border: none;"
 					class="btn btn-primary"
-					onclick="location.href='http://localhost:8081/write'"></input>
+					onclick="location.href='http://localhost:8081/adwrite'"></input>
 			</c:if>
 
 		</div>
@@ -106,6 +103,9 @@
 </body>
 
 <!-- footer here -->
-<jsp:include page="../common/footer.jsp" />
+<footer class="fixed-bottom">
+	<jsp:include page="../common/footer.jsp" />
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>

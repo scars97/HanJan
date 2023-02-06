@@ -22,11 +22,13 @@ public class SearchController {
 
 		List<Map<String, Object>> list = this.searchService.searchList(map);
 		List<Map<String, Object>> nicknameList = this.searchService.nicknameDistinct(map);
+		List<Map<String, Object>> itemList = this.searchService.searchItem(map);
 		
 		ModelAndView mav = new ModelAndView();
 
 		mav.addObject("data", list);
 		mav.addObject("nickname", nicknameList);
+		mav.addObject("item", itemList);
 
 		if (map.containsKey("keyword")) {
 			mav.addObject("keyword", map.get("keyword"));

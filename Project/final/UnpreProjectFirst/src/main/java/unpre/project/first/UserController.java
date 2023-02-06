@@ -18,6 +18,12 @@ public class UserController {
 
 	@Autowired
 	UserService userService;
+	
+	//회원 가입 동의
+	@RequestMapping(value = "/agree", method = RequestMethod.GET)
+	   public ModelAndView agree() {
+	      return new ModelAndView("main/SignUp/agree");
+	   }
 
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
 	public ModelAndView signup() {

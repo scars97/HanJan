@@ -110,7 +110,9 @@
 	<br>
 
 	<!-- footer here -->
+	<footer class="fixed-bottom">
 	<jsp:include page="../common/footer.jsp" />
+</footer>
 
 
 <!-- CLOUDTURING 챗봇 -->

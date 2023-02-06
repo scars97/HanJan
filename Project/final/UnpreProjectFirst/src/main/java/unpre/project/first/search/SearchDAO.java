@@ -22,4 +22,9 @@ public class SearchDAO {
 	public List<Map<String, Object>> distinct(Map<String, Object> map) {
 		return this.sqlSessionTemplate.selectList("user.distinct", map);
 	}
+	
+	// 전체 아이템 검색 메소드
+	public List<Map<String, Object>> selectItem(Map<String, Object> map) {
+		return this.sqlSessionTemplate.selectList("item.select_item", map);
+	}
 }

@@ -1,11 +1,11 @@
 function delCheck(){
 
-   var result = confirm("정말 삭제 할거냐?");
+   var result = confirm("게시글을 삭제하시겠습니까?");
    if(result == true){
-   alert("ㅂ2");
+   alert("삭제되었습니다.");
    }
    else{
-   alert("ㅋㅋ 쫄보쉨");
+   alert("취소되었습니다.");
    return false;
    }
          

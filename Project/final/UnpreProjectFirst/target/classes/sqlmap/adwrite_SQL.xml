@@ -73,7 +73,7 @@
 		</if>
 		
 		
-		order by adb_cdate desc
+		order by ad_category 
 
 	</select>
 	

@@ -15,7 +15,7 @@
 				<li class="selectbar1"><a href="mypagechange">내 정보 수정</a></li>				
 				<li class="selectbar1">
 					<form action="mypageboard" method="get">
-						<button class="myboard" type="submit" name="user_id" value="${signIn.user_id }">내가 쓴 글</button>
+						<button class="myboard" type="submit" name="user_id" value="${signIn.user_id }"><b>내가 쓴 글</b></button>
 					</form>
 				</li>
 				

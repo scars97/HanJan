@@ -20,4 +20,27 @@
     item_num= #{itemNum}   
     ]]>
 	</select>
+	
+	<!-- 아이템 전체 검색 -->
+	<select id="select_item" parameterType="hashMap"
+		resultType="hashMap">  
+   <![CDATA[  
+   select
+   item_num,
+   item_name, 
+   b_category
+   from
+   item i     
+   where 1=1
+
+   ]]>
+		<if test="keyword != null and keyword != ''">
+			and (item_name like CONCAT('%',#{keyword},'%')
+			or b_category like CONCAT('%',#{keyword},'%')
+			)
+		</if>
+		
+	</select>
+	
+	
 </mapper>

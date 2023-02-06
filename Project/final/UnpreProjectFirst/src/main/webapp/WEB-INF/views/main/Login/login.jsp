@@ -90,7 +90,7 @@
 					&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href=""
 						style="color: #4e4e4e">비밀번호 찾기</a>
 					&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a
-						href="http://localhost:8081/signup" style="color: #4e4e4e">회원가입</a>
+						href="agree" style="color: #4e4e4e">회원가입</a>
 				</p>
 			</section>
 
@@ -109,18 +109,23 @@
 
 
 <script>
-	function loginCheck(){
-		if(logincheck.userId.value == ""){
-			alert( "아이디를 입력하세요.");
-			logincheck.userId.focus();
-			return false;			
-		}else if (logincheck.userPwd.value == ""){
-			alert("비밀번호를 입력하세요.");
-			logincheck.userPwd.focus();
-			return false;								
-		} 
-	}
-	</script>
+   function loginCheck(){
+      if(logincheck.userId.value == ""){
+         alert( "아이디를 입력하세요.");
+         logincheck.userId.focus();
+         return false;         
+      }else if (logincheck.userPwd.value == ""){
+         alert("비밀번호를 입력하세요.");
+         logincheck.userPwd.focus();
+         return false;                        
+      }else if(logincheck.userId.value == "관리자"){
+         alert("관리자 아이디로 로그인합니다");
+         
+      }
+      
+      return true;
+   }
+   </script>
 	
 	
 	

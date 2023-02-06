@@ -70,24 +70,15 @@
 		<div>
 		<h3>아이템</h3>
 		</div>
+		<c:forEach var="row3" items="${item}">
 		<ul>
 			<li>
-			<a href="">키워드 표시</a>
-			</li>
-			<li>
-			<a href="">키워드 표시</a>
-			</li>
-			<li>
-			<a href="">키워드 표시</a>
-			</li>
-			<li>
-			<a href="">키워드 표시</a>
-			</li>
-			<li>
-			<a href="">키워드 표시</a>
+			<a href="/introduce?itemNum=${row3.item_num}">${row3.item_name}</a>
 			</li>
 		</ul>
+		</c:forEach>
 		<a href="" class="result_more">아이템 더보기 ▶</a>
+		
 	</div>
 
 </div>

@@ -39,8 +39,8 @@
 	<fmt:formatDate value="${data.cdate}" pattern="yyyy.MM.dd.hh.mm.ss" />&nbsp;</span>
 	<hr>
 	
-	<div style=" height: 10cm; width: 27cm;
-	padding:9px; margin: 0 auto;">
+	<div style=" height: 10cm; width: 100%;
+	padding:9px;">
 	${ data.b_content}
 	</div>
 
@@ -65,7 +65,9 @@
 	<br>
 	
 <!-- footer here -->
-	<jsp:include page="../common/footer.jsp"/>
+	<footer class="fixed-bottom">
+	<jsp:include page="../common/footer.jsp" />
+</footer>
 	
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

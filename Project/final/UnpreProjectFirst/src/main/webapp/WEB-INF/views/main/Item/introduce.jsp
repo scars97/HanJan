@@ -48,7 +48,7 @@ img {
       	<div class="col-lg-4">
       	
       		<span>
-      		<img src="/resources/image/${data.img }"/>
+      		<img src="/resources/image/item/${data.img }"/>
       		</span>
       		
       	</div>

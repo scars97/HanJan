@@ -38,12 +38,12 @@
 		<form method=post action="mypageupdate.do">
 			<table class="type07" style="margin-bottom: 25px;">
 				<tr>
-					<th>ID</th>
+					<th>아이디</th>
 					<td>${signIn.user_id}</td>
 					<input type=hidden name=user_id value="${signIn.user_id }">
 				</tr>
 				<tr>
-					<th>PW</th>
+					<th>비밀번호</th>
 					<td><input type=password name=pwd id=pwdbefore disabled
 						placeholder="필수 입력 사항입니다." value="${signIn.pwd }"> <input
 						type=button id=pw_button value="변경" onclick="change_pw();"></td>
@@ -83,7 +83,9 @@
 
 	<!-- Footer -->
 	<!-- footer here -->
+	<footer class="fixed-bottom">
 	<jsp:include page="../common/footer.jsp" />
+</footer>
 
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

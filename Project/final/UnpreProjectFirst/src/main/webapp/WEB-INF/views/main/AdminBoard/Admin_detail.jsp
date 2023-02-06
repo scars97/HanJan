@@ -41,8 +41,8 @@
 	<hr>
 	
 	
-	<div style=" height: 10cm;
-	padding:9px; margin: 0 auto;">
+	<div style=" height: 10cm; width:100%;
+	padding:9px;">
 	${addata.adb_content}
 	</div>
 	
@@ -59,9 +59,15 @@
 	</c:if>
 	</div>
 	<br>
-</body>
-
+	
 	<!-- footer here -->
-	<jsp:include page="../common/footer.jsp"/>
+	<footer class="fixed-bottom">
+	<jsp:include page="../common/footer.jsp" />
+</footer>
 
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+</body>
 </html>

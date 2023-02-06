@@ -20,13 +20,6 @@
 				id="navbarSupportedContent">
 				<ul class="navbar-nav" style="height: 47px;">
 
-					<c:if test="${signIn.user_id == '관리자'}">
-						<li class="nav-item"
-							style="border-right: 2px solid; border-left: 2px solid; width: 95px; text-align: center; margin-top: 15px;">
-							<a class="nav-link active" href="#">관리페이지</a>
-						</li>
-					</c:if>
-
 					<li class="nav-item dropdown"
 						style="border-right: 2px solid; width: 95px; text-align: center; padding-top:4px;">
 						<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black">커뮤니티</a>

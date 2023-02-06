@@ -37,13 +37,13 @@
 	</div>	
 		<table class="type07">
 			<tr>
+				<th scope="row">이름</th>
+				<td>${signIn.user_name}</td>
+			</tr>
+			<tr>
 				<th scope="row">아이디</th>
 				<td>${signIn.user_id }</td>
 			</tr>
-			<!-- <tr>
-				<th scope="row">비밀번호</th>
-				<td>내용이 들어갑니다.</td>
-			</tr> -->
 			<tr>
 				<th scope="row">전화번호</th>
 				<td>${signIn.user_tel }</td>
@@ -61,7 +61,9 @@
 
 	<!-- Footer -->
 	<!-- footer here -->
+	<footer class="fixed-bottom">
 	<jsp:include page="../common/footer.jsp" />
+</footer>
 
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
